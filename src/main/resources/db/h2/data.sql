@@ -73,3 +73,12 @@ INSERT INTO COMMENT (ID, TEXT, PRODUCT_ID) VALUES
     (19, 'Too hard! I would not buy again', 30),
     (20, 'Taste is OK, but I agree with previous comment that bars are too hard to eat', 30),
     (21, 'Would definitely NOT buy again. Simply unedible!', 30);
+
+-- Customers
+INSERT INTO CUSTOMER (ID, NAME, CUSTOMER_SINCE) VALUES
+(1, 'James Cucumber', '2006-04-02 13:20'),
+(2, 'Anna Lettuce', '2005-01-30 17:14'),
+(3, 'Boris Tomato', '2008-12-02 09:53'),
+(4, 'Shannon Parsley', '2009-03-24 10:45'),
+(5, 'Susan Cheddar', '2007-10-01 15:02'),
+(6, 'George Garlic', '2010-05-18 20:30');
