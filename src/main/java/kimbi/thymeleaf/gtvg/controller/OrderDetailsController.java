@@ -1,30 +1,30 @@
 package kimbi.thymeleaf.gtvg.controller;
 
-import java.util.List;
 import kimbi.thymeleaf.gtvg.model.Order;
 import kimbi.thymeleaf.gtvg.service.OrderService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
-@RequestMapping("/order")
 @Controller
-public class OrderListController {
+@RequestMapping("/order/details")
+public class OrderDetailsController {
 
   private final OrderService service;
 
-  public OrderListController(OrderService service) {
+  public OrderDetailsController(OrderService service) {
     this.service = service;
   }
 
-  @ModelAttribute("orders")
-  public List<Order> getOrders() {
-    return service.findAll();
+  @ModelAttribute("order")
+  private Order getOrderById(@RequestParam("orderId") Integer orderId) {
+    return service.findById(orderId);
   }
 
-  @GetMapping("list")
-  public String getList() {
-    return "order/list";
+  @GetMapping("")
+  public String getOrderDetails() {
+    return "order/details";
   }
 }
