@@ -46,5 +46,3 @@ Ready to dive in? Follow these steps to get the project running:
 ## Further Learning
 
 To deepen your understanding of Thymeleaf, we highly recommend exploring the official [Thymeleaf Tutorials](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html). This resource provides comprehensive explanations of Thymeleaf's features and syntax.
-
-This revised document now includes a clear reference to the official Thymeleaf tutorials and integrates it into the description and further learning section. Let me know if you have any more adjustments!
